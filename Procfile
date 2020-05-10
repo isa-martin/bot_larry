@@ -1,1 +1,1 @@
-"worker: python twitter.py" 
+web: gunicorn python:twitter.py
