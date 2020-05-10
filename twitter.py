@@ -24,11 +24,11 @@ def interact_With_Tweet(tweet):
     print('Tweet Replied')
     api.update_status('@' + tweet.user.screen_name + ' Larry is real!', in_reply_to_status_id=tweet_id)
     print(tweet.__dict__.keys())
-    time.sleep(10) #87 seconds
+    time.sleep(87) 
 
 auth = inicialize_Bot()
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 user = api.me()
 search = '@larryisreal_bot'
-n_Tweets = 1
+n_Tweets = 100
 search_For(search, n_Tweets, api)
