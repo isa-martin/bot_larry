@@ -1,1 +1,1 @@
-web: gunicorn python:twitter.py
+web: gunicorn larry-is-real-bot:twitter.py
